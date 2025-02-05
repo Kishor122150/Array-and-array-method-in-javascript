@@ -73,7 +73,56 @@ fruits.splice(1,1,"volleyball")
 console.log(doubled)    //result:2,4,6
 let doubled=numbers.map((num)=>num+2);  //1+2=3,2+2=4,3+2=5
    console.log(doubled)    //result:3,4,5
-   */
+
    
    //10) filter() => create a new array with element that pass a test provided by function
+  //for evens number
+   let numbers=[1,2,3,4,5,];
+  let evens=numbers.filter((num)=> num%2===0);
+  console.log(evens)  //result : 2,4  
 
+//for odd numbers
+let numbers=[1,2,3,4,5];
+let odds=numbers.filter((num)=>num%2===1);
+console.log(odds);
+
+ 
+    // 11) Reduce()  =>REDUCE a array to a single value by applying  a function to each elements
+    let numbers=[1,2,3,4,];
+    let sum=numbers.reduce((acc,num)=>acc+num,0);
+    console.log(sum);          //output=10
+
+    
+// 12)find()  =>return the first elements in the array that specifies a provided testing function
+
+let numbers=[1,2,3,4,5];
+let found=numbers.find((num)=>num>3);
+console.log(found)   //output:4
+
+ 
+// 13)includes() =>checks if an array includes a certain value
+  let fruits=["apple","banana","orange"];
+  console.log(fruits.includes("banana"));   //output:true   ke banana xa ke nai array ma
+  console.log(fruits.includes("potato"))     //output:false
+
+
+//  14)index of() =>return a first index at which a given elements can found or -1 if it is not present
+  let fruits=["apple","banana","orange"];
+  console.log(fruits.indexOf("banana")) //1
+  console.log(fruits.indexOf("orange")) //2
+  console.log(fruits.indexOf("mango")) //-1
+ 
+//   15)sort() =>sort the element of array in place   (order ma milauca)
+let fruits=["c","a","b"];
+fruits.sort()
+console.log(fruits)    //output:a,b,c  
+
+let fruits=[67,20,27];
+fruits.sort()
+console.log(fruits)    //output:20,27,67  
+
+  //16) reverse() =>reverse order of element in array
+   let fruits=["apple","mango","banana"]
+   fruits.reverse()
+   console.log(fruits)  //output:banana ,mango,apple;
+*/
