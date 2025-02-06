@@ -125,4 +125,68 @@ console.log(fruits)    //output:20,27,67
    let fruits=["apple","mango","banana"]
    fruits.reverse()
    console.log(fruits)  //output:banana ,mango,apple;
-*/
+
+
+    //spread operator in js
+    //1) add new things
+    let numbers=[1,2,3];
+    numbers=[...numbers,4];
+    console.log(numbers)
+
+let names=['kishor','kiran','kripa'];
+    names=[...names, 'goma'];
+    console.log(names)   //result:kishor','kiran','kripa','goma'
+
+  // 2)joining 2 array
+  let number1=[1,2];
+  let number2=[3,4];
+  let numbers=[...number1,...number2];
+  console.log(numbers);     //res:1,2,3,4
+
+
+ //join 2 array and used loop to dispay all name at times without index
+  let name1=['kishor','kiran','kripa'];
+  let name2=['goma','keshab'];
+  let finalnames=[...name1,...name2];
+  for(i=0;i<finalnames.length;i++){
+
+    console.log(finalnames[i])   //result:kishor','kiran','kripa','goma'
+  }
+     //array
+     var students=["a","b","c","d"];
+    //  console.log(students)   //all
+    console.log(students[3])  //d
+    console.log("length of students is:"+students.length)
+
+    // for loop
+    var students=["a","b","c","d"];
+    for(i=0;i<students.length;i++){
+      console.log(students[i]);     //print all without array index
+    }
+              
+               
+     //loop
+     var students=["a","b","c","d"];
+     for(let i in students){
+      // console.log(students[i]);
+      console.log(i);    // in gives index value
+     }
+
+     var students=["a","b","c","d"];
+    for( let i of students){
+      // console.log(students[i])
+      console.log(i);       //of gives value
+    }
+                */
+
+        // forEach loop  =>index and value
+          //syntax
+          // students.forEach(parameter,function)
+          var students=["a","b","c","d"];
+          students.forEach(function(value,index){
+            console.log(value,index);     //give value plus index
+          })
+
+
+
+
