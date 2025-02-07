@@ -187,6 +187,10 @@ let names=['kishor','kiran','kripa'];
             console.log(value,index);     //give value plus index
           })
 
+          let std=[1,2,3];
+          console.log(std);
+
+
 
 
 
